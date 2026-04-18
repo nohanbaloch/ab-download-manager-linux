@@ -38,11 +38,22 @@ Please visit [Project Website](https://abdownloadmanager.com) for more info.
 
 <a href="https://abdownloadmanager.com"><img src="https://img.shields.io/badge/Official%20Website-897BFF?logo=abdownloadmanager&logoColor=fff&style=flat-square" alt="Official Website" height="32" /></a>
 <a href="https://github.com/amir1376/ab-download-manager/releases/latest"><img src="https://img.shields.io/badge/GitHub%20Releases-2a2f36?logo=github&logoColor=fff&style=flat-square" alt="GitHub Releases" height="32" /></a>
+<a href="https://github.com/nohanbaloch/ab-download-manager-linux/releases/tag/v1.8.8"><img src="https://img.shields.io/badge/Debian%20Package-v1.8.8-brightgreen?logo=debian&logoColor=fff&style=flat-square" alt="Debian Package Release" height="32" /></a>
 
 #### Installation script (Linux)
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/amir1376/ab-download-manager/master/scripts/install.sh)
+```
+
+#### Debian Package (Linux - Ubuntu, Debian, Pop!_OS)
+
+Download the latest Debian package from the [Debian Release Page](https://github.com/nohanbaloch/ab-download-manager-linux/releases/tag/v1.8.8):
+
+```bash
+# Download and install the .deb package
+wget https://github.com/nohanbaloch/ab-download-manager-linux/releases/download/v1.8.8/abdownloadmanager_1.8.8_amd64.deb
+sudo dpkg -i abdownloadmanager_1.8.8_amd64.deb
 ```
 
 #### Winget or Scoop (for Windows)

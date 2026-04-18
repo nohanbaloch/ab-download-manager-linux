@@ -9,3 +9,9 @@ local.properties
 
 # Ignore android keystores
 *.jks
+
+# Debian packaging build artifacts
+abdownloadmanager_*/
+*.deb
+DEBIAN/
+debian-root/
