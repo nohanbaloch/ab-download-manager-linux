@@ -48,9 +48,9 @@ mkdir -p "$PACKAGE_DIR/usr/share/icons/hicolor/256x256/apps"
 # Copy DEBIAN metadata files
 echo -e "${YELLOW}Copying DEBIAN metadata files...${NC}"
 
-cp DEBIAN_control "$PACKAGE_DIR/DEBIAN/control"
-cp DEBIAN_postinst "$PACKAGE_DIR/DEBIAN/postinst"
-cp DEBIAN_prerm "$PACKAGE_DIR/DEBIAN/prerm"
+cp .deb/DEBIAN_control "$PACKAGE_DIR/DEBIAN/control"
+cp .deb/DEBIAN_postinst "$PACKAGE_DIR/DEBIAN/postinst"
+cp .deb/DEBIAN_prerm "$PACKAGE_DIR/DEBIAN/prerm"
 
 # Set permissions on DEBIAN scripts
 chmod 755 "$PACKAGE_DIR/DEBIAN/postinst"
@@ -71,7 +71,7 @@ chmod 755 "$PACKAGE_DIR/opt/ABDownloadManager/bin" 2>/dev/null || true
 # Copy desktop file
 echo -e "${YELLOW}Copying desktop launcher...${NC}"
 
-cp abdownloadmanager.desktop "$PACKAGE_DIR/usr/share/applications/"
+cp .deb/abdownloadmanager.desktop "$PACKAGE_DIR/usr/share/applications/"
 chmod 644 "$PACKAGE_DIR/usr/share/applications/abdownloadmanager.desktop"
 
 # Copy and install icon
