@@ -144,7 +144,7 @@ I've spent a lot of time to create this project.
 
 If you like my work, please consider giving it a ⭐ — thanks! ❤️
 
-## Bug Report
+## Bug Report./build-deb.sh
 
 If you notice any bugs in the source code, please report them via the `GitHub Issues` section.
 
